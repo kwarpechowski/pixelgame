@@ -1,0 +1,58 @@
+<html>
+
+<head>
+	<title>Demo</title>
+	<meta charset="UTF-8" />
+	<style>
+		body {
+			margin: 0;
+			padding: 0
+		}
+		#buttons {
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		.container {
+			overflow: scroll;
+			height: 100vh;
+			transform: translateZ(0);
+			text-align: center;
+		}
+
+		#elements {
+			position: relative;
+			display: inline-block;
+		}
+
+		#letters {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#myCanvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: 2px;
+			box-shadow: 0 0 10px #ccc;
+			z-index: 2;
+		}
+	</style>
+</head>
+
+<body>
+		<div class="container">
+			<div id="elements">
+				<canvas id="letters"></canvas>
+				<canvas id="myCanvas"></canvas>
+			</div>
+		</div>
+		<div id="buttons">
+			<button id="down">zoom in</button>
+			<button id="up">zoom out</button>
+		</div>
+		<script src="src/index.js"></script>
+</body>
+
+</html>
